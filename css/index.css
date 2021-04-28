@@ -156,7 +156,7 @@ body {
   flex-grow: 1;
   padding: 10px;
   flex-basis: 28%;
-  min-width: 350px;
+  width: auto;
 
   display: flex;
   flex-direction: column;
@@ -226,14 +226,14 @@ footer > a{
 
 .contact-section{
   background-color: #181818;
-  padding: 80px 20px;
+  padding: 15vh 20px;
   color: white;
   text-align: center;
 }
 
 @media (max-width:500px){
   .nav-right{
-    color: black;
+    opacity: 0;
     pointer-events: none;
   }
 }
