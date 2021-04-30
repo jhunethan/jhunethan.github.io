@@ -1,25 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+$background-colour: #181818;
+$secondary-background-colour: #202020;
+
 @keyframes fade-slide-in-from-top {
   from {
     transform: translateY(-25px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
   }
 }
+
 @keyframes slide-in-from-bottom {
   from {
     transform: translateY(100px);
   }
+
   to {
     transform: translateY(0);
   }
 }
 
 html {
-  background-color: #181818;
+  background-color: $background-colour;
 }
 
 body {
@@ -36,7 +43,7 @@ body {
   margin: 0;
   color: white;
   font-size: 1.25rem;
-  background-color: #181818;
+  background-color: $background-colour;
 }
 
 .header-nav {
@@ -92,7 +99,7 @@ body {
 }
 
 .top-section {
-  background-color: #181818;
+  background-color: $background-colour;
   padding: 20px;
   margin: 10px auto;
   height: fit-content;
@@ -121,14 +128,15 @@ body {
   border: 1px solid white;
   user-select: none;
   transition: 0.3s;
-}
-.skills-list-child:hover {
-  background-color: #cccccc;
-  color: black;
+
+  &:hover {
+    background-color: #cccccc;
+    color: black;
+  }
 }
 
 .projects-section {
-  background-color: #181818;
+  background-color: $background-colour;
   color: white;
   width: 100vw;
   padding: 15vh 0;
@@ -158,14 +166,16 @@ body {
   justify-content: center;
   align-items: center;
   transition: 0.3s;
-}
-.projects-container-child:hover {
-  background-color: #141414;
-  cursor: pointer;
-}
-.projects-container-child > * {
-  width: 100%;
-  text-align: center;
+
+  &:hover {
+    background-color: #141414;
+    cursor: pointer;
+  }
+
+  > * {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .projects-image-placeholder {
@@ -189,7 +199,7 @@ body {
 }
 
 footer {
-  background-color: #0f0f0f;
+  background-color: rgb(15, 15, 15);
   color: white;
   height: 100px;
   display: flex;
@@ -205,19 +215,20 @@ footer {
 }
 
 .about-section {
-  background-color: #202020;
+  background-color: $secondary-background-colour;
   margin: 0;
   padding: 20px 20px 50px 20px;
   text-align: center;
   color: white;
-}
-.about-section > p {
-  max-width: 500px;
-  margin: 0 auto 50px auto;
+
+  > p {
+    max-width: 500px;
+    margin: 0 auto 50px auto;
+  }
 }
 
 .contact-section {
-  background-color: #181818;
+  background-color: $background-colour;
   padding: 15vh 20px;
   height: 40vh;
   color: white;
@@ -230,5 +241,3 @@ footer {
     pointer-events: none;
   }
 }
-
-/*# sourceMappingURL=index.css.map */
