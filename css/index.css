@@ -17,9 +17,13 @@
     transform: translateY(0);
   }
 }
-
 html {
   background-color: #181818;
+}
+
+* {
+  color: white;
+  transition: all 0.3s;
 }
 
 body {
@@ -34,7 +38,6 @@ body {
   height: 40px;
   width: 100vw;
   margin: 0;
-  color: white;
   font-size: 1.25rem;
   background-color: #181818;
 }
@@ -49,14 +52,13 @@ body {
 }
 
 .header-nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 5px 10px;
   margin: 0;
   height: auto;
   user-select: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s;
 }
 
 .nav-right {
@@ -65,7 +67,6 @@ body {
 
 .header-nav-link:hover {
   background: #424242;
-  color: white;
   cursor: pointer;
 }
 
@@ -78,17 +79,16 @@ body {
   z-index: -2;
   height: 100vh;
   min-width: 100%;
-  transition: 0.3s;
 }
 
 .top {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: auto;
   height: 500px;
   padding-top: 10vh;
-  color: white;
 }
 
 .top-section {
@@ -104,10 +104,6 @@ body {
   margin: 0;
 }
 
-.skills-section {
-  text-align: center;
-}
-
 .skills-list {
   list-style: none;
   display: flex;
@@ -120,7 +116,6 @@ body {
   padding: 0 10px;
   border: 1px solid white;
   user-select: none;
-  transition: 0.3s;
 }
 .skills-list-child:hover {
   background-color: #cccccc;
@@ -129,14 +124,12 @@ body {
 
 .projects-section {
   background-color: #181818;
-  color: white;
   width: 100vw;
   padding: 15vh 0;
   animation: slide-in-from-bottom 1s;
 }
 
 .section-title {
-  color: white;
   text-align: center;
   width: 100%;
 }
@@ -149,15 +142,14 @@ body {
 }
 
 .projects-container-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   flex-grow: 1;
   padding: 10px;
   flex-basis: 28%;
   width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s;
 }
 .projects-container-child:hover {
   background-color: #141414;
@@ -177,8 +169,9 @@ body {
 
 .projects-individual-skills {
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   gap: 10px;
   max-width: 300px;
   padding: 20px;
@@ -189,18 +182,16 @@ body {
 }
 
 footer {
-  background-color: #0f0f0f;
-  color: white;
-  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: #0f0f0f;
+  height: 100px;
 }
 
 .footer-link {
   font-weight: bold;
-  color: white;
   margin: 10px;
 }
 
@@ -209,7 +200,6 @@ footer {
   margin: 0;
   padding: 20px 20px 50px 20px;
   text-align: center;
-  color: white;
 }
 .about-section > p {
   max-width: 500px;
@@ -220,7 +210,6 @@ footer {
   background-color: #181818;
   padding: 15vh 20px;
   height: 40vh;
-  color: white;
   text-align: center;
 }
 
