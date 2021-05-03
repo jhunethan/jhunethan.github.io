@@ -107,8 +107,8 @@ body {
 .skills-list {
   list-style: none;
   display: flex;
+  flex-flow: row wrap;
   gap: 10px;
-  flex-wrap: wrap;
   padding: 10px 30px;
 }
 
@@ -137,7 +137,7 @@ body {
 .projects-container {
   display: flex;
   flex-flow: row wrap;
-  gap: 20px;
+  gap: 10px;
   margin: 50px;
 }
 
