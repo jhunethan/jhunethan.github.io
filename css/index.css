@@ -19,11 +19,11 @@
 }
 /*# sourceMappingURL=index.css.map */
 html {
-  background-color: #181818;
+  background-color: #fff;
 }
 
 * {
-  color: white;
+  color: black;
   transition: all 0.3s;
 }
 
@@ -36,11 +36,11 @@ body {
 
 .header {
   position: fixed;
-  height: 40px;
+  height: 50px;
   width: 100vw;
   margin: 0;
   font-size: 1.25rem;
-  background-color: #181818;
+  background-color: #435B70;
 }
 
 .header-nav {
@@ -59,10 +59,11 @@ body {
   padding: 5px 10px;
   margin: 0;
   height: auto;
+  color: white;
   user-select: none;
 }
 .header-nav-link:hover {
-  background: #424242;
+  background-color: #39536a;
   cursor: pointer;
 }
 
@@ -92,12 +93,13 @@ body {
 }
 
 .top-section {
-  background-color: #181818;
+  background-color: #fcfcfc;
   padding: 20px;
   margin: 10px auto;
   height: fit-content;
   max-width: 400px;
   animation: fade-slide-in-from-top 1s;
+  border-bottom: #435B70 5px solid;
 }
 
 .top-fullname {
@@ -114,21 +116,27 @@ body {
 
 .skills-list-child {
   padding: 5px 10px;
-  background-color: white;
+  background-color: #435B70;
   border: white 1px solid;
-  color: black;
+  color: white;
   font-weight: bold;
   user-select: none;
 }
 .skills-list-child:hover {
-  background-color: #000;
-  color: white;
+  background-color: #fcfcfc;
+  color: black;
+}
+
+.section {
+  width: 100vw;
+  padding: 20px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .projects-section {
-  background-color: #181818;
-  width: 100vw;
-  padding: 15vh 0;
+  background-color: white;
+  padding: 15vh 20px;
   animation: slide-in-from-bottom 1s;
 }
 
@@ -140,8 +148,16 @@ body {
 .projects-container {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   margin: 50px;
+}
+
+.project-title {
+  background-color: #435B70;
+  color: white;
+  padding: 10px 0;
 }
 
 .project-description {
@@ -157,9 +173,10 @@ body {
   padding: 10px;
   flex-basis: 28%;
   width: auto;
+  max-width: 400px;
 }
 .projects-container-child:hover {
-  background-color: #141414;
+  background-color: #f2f2f2;
   cursor: pointer;
 }
 .projects-container-child > * {
@@ -170,8 +187,8 @@ body {
 .projects-image-placeholder {
   margin: 0 auto 20px auto;
   height: 200px;
-  width: 200px;
-  border: 1px solid white;
+  width: 100%;
+  border: 1px solid black;
 }
 
 .projects-individual-skills {
@@ -192,6 +209,9 @@ footer {
   background-color: #0f0f0f;
   height: 100px;
 }
+footer p, footer a {
+  color: #fff;
+}
 
 .footer-link {
   font-weight: bold;
@@ -199,8 +219,7 @@ footer {
 }
 
 .about-section {
-  background-color: #202020;
-  margin: 0;
+  background-color: #fcfcfc;
   padding: 20px 20px 50px 20px;
   text-align: center;
 }
@@ -210,7 +229,7 @@ footer {
 }
 
 .contact-section {
-  background-color: #181818;
+  background-color: white;
   padding: 15vh 20px;
   height: 40vh;
   text-align: center;
