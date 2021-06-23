@@ -1,0 +1,30 @@
+.projects-description{
+    max-width: 42ch;
+  }
+  
+  .projects-container-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+    flex-basis: 28%;
+    width: auto;
+  }
+  .projects-container-child:hover {
+    background-color: #141414;
+    cursor: pointer;
+  }
+  .projects-container-child > * {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .projects-image-placeholder {
+    margin: 0 auto 20px auto;
+    height: 200px;
+    width: 200px;
+    border: 1px solid white;
+  }
+  
