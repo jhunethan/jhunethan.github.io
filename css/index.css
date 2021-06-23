@@ -113,13 +113,16 @@ body {
 }
 
 .skills-list-child {
-  padding: 0 10px;
-  border: 1px solid white;
+  padding: 5px 10px;
+  background-color: white;
+  border: white 1px solid;
+  color: black;
+  font-weight: bold;
   user-select: none;
 }
 .skills-list-child:hover {
-  background-color: #cccccc;
-  color: black;
+  background-color: #000;
+  color: white;
 }
 
 .projects-section {
@@ -139,6 +142,10 @@ body {
   flex-flow: row wrap;
   gap: 10px;
   margin: 50px;
+}
+
+.project-description{
+  max-width: 42ch;
 }
 
 .projects-container-child {
@@ -175,10 +182,6 @@ body {
   gap: 10px;
   max-width: 300px;
   padding: 20px;
-}
-
-.projects-individual-skills-child {
-  width: auto;
 }
 
 footer {
