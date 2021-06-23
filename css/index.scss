@@ -1,24 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+$background-colour: #181818;
+$secondary-background-colour: #202020;
+
 @keyframes fade-slide-in-from-top {
   from {
     transform: translateY(-25px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
   }
 }
+
 @keyframes slide-in-from-bottom {
   from {
     transform: translateY(100px);
   }
+
   to {
     transform: translateY(0);
   }
 }
+
+@mixin flexandCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 html {
-  background-color: #181818;
+  background-color: $background-colour;
 }
 
 * {
@@ -39,7 +53,7 @@ body {
   width: 100vw;
   margin: 0;
   font-size: 1.25rem;
-  background-color: #181818;
+  background-color: $background-colour;
 }
 
 .header-nav {
@@ -52,9 +66,7 @@ body {
 }
 
 .header-nav-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexandCenter;
   padding: 5px 10px;
   margin: 0;
   height: auto;
@@ -82,9 +94,7 @@ body {
 }
 
 .top {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexandCenter;
   flex-direction: column;
   width: auto;
   height: 500px;
@@ -92,7 +102,7 @@ body {
 }
 
 .top-section {
-  background-color: #181818;
+  background-color: $background-colour;
   padding: 20px;
   margin: 10px auto;
   height: fit-content;
@@ -116,14 +126,15 @@ body {
   padding: 0 10px;
   border: 1px solid white;
   user-select: none;
-}
-.skills-list-child:hover {
-  background-color: #cccccc;
-  color: black;
+
+  &:hover {
+    background-color: #cccccc;
+    color: black;
+  }
 }
 
 .projects-section {
-  background-color: #181818;
+  background-color: $background-colour;
   width: 100vw;
   padding: 15vh 0;
   animation: slide-in-from-bottom 1s;
@@ -141,29 +152,71 @@ body {
   margin: 50px;
 }
 
+.projects-container-child {
+  @include flexandCenter;
+  flex-direction: column;
+
+  flex-grow: 1;
+  padding: 10px;
+  flex-basis: 28%;
+  width: auto;
+
+  &:hover {
+    background-color: #141414;
+    cursor: pointer;
+  }
+
+  > * {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.projects-image-placeholder {
+  margin: 0 auto 20px auto;
+  height: 200px;
+  width: 200px;
+  border: 1px solid white;
+}
+
 .projects-individual-skills {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexandCenter;
   flex-flow: row wrap;
   gap: 10px;
   max-width: 300px;
   padding: 20px;
 }
 
+.projects-individual-skills-child {
+  width: auto;
+}
+
+footer {
+  @include flexandCenter;
+  text-align: center;
+  background-color: rgb(15, 15, 15);
+  height: 100px;
+}
+
+.footer-link {
+  font-weight: bold;
+  margin: 10px;
+}
+
 .about-section {
-  background-color: #202020;
+  background-color: $secondary-background-colour;
   margin: 0;
   padding: 20px 20px 50px 20px;
   text-align: center;
-}
-.about-section > p {
-  max-width: 500px;
-  margin: 0 auto 50px auto;
+
+  > p {
+    max-width: 500px;
+    margin: 0 auto 50px auto;
+  }
 }
 
 .contact-section {
-  background-color: #181818;
+  background-color: $background-colour;
   padding: 15vh 20px;
   height: 40vh;
   text-align: center;
@@ -175,5 +228,3 @@ body {
     pointer-events: none;
   }
 }
-
-/*# sourceMappingURL=index.css.map */
