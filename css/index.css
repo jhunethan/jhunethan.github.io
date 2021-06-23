@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Montserrat&display=swap";
 @keyframes fade-slide-in-from-top {
   from {
     transform: translateY(-25px);
@@ -17,6 +17,7 @@
     transform: translateY(0);
   }
 }
+/*# sourceMappingURL=index.css.map */
 html {
   background-color: #181818;
 }
@@ -60,14 +61,13 @@ body {
   height: auto;
   user-select: none;
 }
-
-.nav-right {
-  margin: 0 10px;
-}
-
 .header-nav-link:hover {
   background: #424242;
   cursor: pointer;
+}
+
+.nav-right {
+  margin: 0 10px;
 }
 
 .nav-home {
@@ -144,7 +144,7 @@ body {
   margin: 50px;
 }
 
-.project-description{
+.project-description {
   max-width: 42ch;
 }
 
