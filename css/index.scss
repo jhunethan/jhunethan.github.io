@@ -1,230 +1,231 @@
 @import "https://fonts.googleapis.com/css2?family=Montserrat&display=swap";
 @keyframes fade-slide-in-from-top {
-	from {
-		transform: translateY(-25px);
-		opacity: 0;
-	}
-	to {
-		transform: translateY(0);
-		opacity: 1;
-	}
+  from {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 @keyframes slide-in-from-bottom {
-	from {
-		transform: translateY(100px);
-	}
-	to {
-		transform: translateY(0);
-	}
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 /*# sourceMappingURL=index.css.map */
 
-$primary-font-colour:black;
+$primary-font-colour: black;
 $secondary-font-colour: white;
 
 $primary-background-colour: rgb(255, 255, 255);
 $secondary-background-colour: hsl(0, 0%, 99%);
 
-$primary-foreground-colour:#435B70;
+$primary-foreground-colour: #435b70;
 
 $hover-colour: hsl(208, 30%, 32%);
-$project-hover:hsl(0, 0%, 95%);
+$project-hover: hsl(0, 0%, 95%);
 
 html {
-	background-color: #fff;
+  background-color: #fff;
 }
 * {
-	color: $primary-font-colour;
-	transition: all 0.3s;
+  color: $primary-font-colour;
+  transition: all 0.3s;
 }
 body {
-	margin: 0;
-	font-family: "Montserrat", sans-serif;
-	width: 100vw;
-	overflow-x: hidden;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
 }
 .header {
-	position: fixed;
-	height:50px;
-	width: 100vw;
-	margin: 0;
-	font-size: 1.25rem;
-	background-color: $primary-foreground-colour;
+  position: fixed;
+  height: 50px;
+  width: 100vw;
+  margin: 0;
+  font-size: 1.25rem;
+  background-color: $primary-foreground-colour;
 }
 .header-nav {
-	padding: 0;
-	display: flex;
-	flex-direction: row;
-	list-style: none;
-	height: 100%;
-	margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  height: 100%;
+  margin: 0;
 }
 .header-nav-link {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 5px 10px;
-	margin: 0;
-	height: auto;
-	color: $secondary-font-colour;
-	user-select: none;
-	&:hover {
-		background-color: $hover-colour;
-		cursor: pointer;
-	}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  margin: 0;
+  height: auto;
+  color: $secondary-font-colour;
+  user-select: none;
+  &:hover {
+    background-color: $hover-colour;
+    cursor: pointer;
+  }
 }
 .nav-right {
-	margin: 0 10px;
+  margin: 0 10px;
 }
 .nav-home {
-	margin: 0 auto 0 0;
+  margin: 0 auto 0 0;
 }
 .background-image {
-	position: fixed;
-	z-index: -2;
-	height: 100vh;
-	min-width: 100%;
+  position: fixed;
+  z-index: -2;
+  height: 100vh;
+  min-width: 100%;
 }
 .top {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: auto;
-	height: 500px;
-	padding-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+  height: 500px;
+  padding-top: 10vh;
 }
 .top-section {
-	background-color: $secondary-background-colour;
-	padding: 20px;
-	margin: 10px auto;
-	height: fit-content;
-	max-width: 400px;
-	animation: fade-slide-in-from-top 1s;
-	border-bottom: $primary-foreground-colour 5px solid;
+  background-color: $secondary-background-colour;
+  padding: 20px;
+  margin: 10px auto;
+  height: fit-content;
+  max-width: 400px;
+  animation: fade-slide-in-from-top 1s;
+  border-bottom: $primary-foreground-colour 5px solid;
 }
 .top-fullname {
-	margin: 0;
+  margin: 0;
 }
 .skills-list {
-	list-style: none;
-	display: flex;
-	flex-flow: row wrap;
-	gap: 10px;
-	padding: 10px 30px;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  padding: 10px 30px;
 }
 .skills-list-child {
-	padding: 5px 10px;
-	background-color: $primary-foreground-colour;
-	border: white 1px solid;
-	color: $secondary-font-colour;
-	font-weight: bold;
-	user-select: none;
-	&:hover {
-		background-color: $secondary-background-colour;
-		color: $primary-font-colour;
-	}
-}
-.section{
-	width: 100vw;
-	padding: 20px;
-	max-width: 1300px;
-	margin: 0 auto;
+  padding: 5px 10px;
+  background-color: $primary-foreground-colour;
+  border: white 1px solid;
+  color: $secondary-font-colour;
+  font-weight: bold;
+  user-select: none;
+  &:hover {
+    background-color: $secondary-background-colour;
+    color: $primary-font-colour;
+  }
 }
 .projects-section {
-	background-color: $primary-background-colour;
-	padding: 15vh 20px;
-	animation: slide-in-from-bottom 1s;
+  background-color: $primary-background-colour;
+  padding: 15vh 20px;
+  animation: slide-in-from-bottom 1s;
 }
 .section-title {
-	text-align: center;
-	width: 100%;
+  text-align: center;
+  width: 100%;
 }
 .projects-container {
-	display: flex;
-	flex-flow: row wrap;
-justify-content: center;	align-items: center;
-	gap: 10px;
-	margin: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  max-width: 1200px;
+  gap: 10px;
+  margin: 50px auto;
 }
-.project-title{
-	background-color: $primary-foreground-colour;
-	color: $secondary-font-colour;
+.project-title {
+  background-color: $primary-foreground-colour;
+  color: $secondary-font-colour;
 
-	padding: 10px 0;
+  padding: 10px 0;
 }
 .project-description {
-	max-width: 42ch;
+  max-width: 42ch;
 }
 .projects-container-child {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	flex-grow: 1;
-	padding: 10px;
-	flex-basis: 28%;
-	width: auto;
-	max-width: 400px;
-	&:hover {
-		background-color: $project-hover;
-		cursor: pointer;
-	}
-	>* {
-		width: 100%;
-		text-align: center;
-	}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 10px;
+  flex-basis: 28%;
+  width: auto;
+  max-width: 400px;
+  &:hover {
+    background-color: $project-hover;
+    cursor: pointer;
+  }
+  > * {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .projects-image-placeholder {
-	margin: 0 auto 20px auto;
-	height: 200px;
-	width: 100%;
-	border: 1px solid black;
+  margin: 0 auto 20px auto;
+  height: 200px;
+  width: 100%;
+  border: 1px solid black;
 }
 .projects-individual-skills {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
-	gap: 10px;
-	max-width: 300px;
-	padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 10px;
+  max-width: 300px;
+  padding: 20px;
 }
 footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	background-color: #0f0f0f;
-	height: 100px;
-	p,a{
-		color: #fff;
-	}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #0f0f0f;
+  height: 100px;
+  p,
+  a {
+    color: #fff;
+  }
 }
 
 .footer-link {
-	font-weight: bold;
-	margin: 10px;
+  font-weight: bold;
+  margin: 10px;
 }
 .about-section {
-	background-color: $secondary-background-colour;
-	padding: 20px 20px 50px 20px;
-	text-align: center;
-	>p {
-		max-width: 500px;
-		margin: 0 auto 50px auto;
-	}
+  background-color: $secondary-background-colour;
+  padding: 20px 20px 50px 20px;
+  text-align: center;
+  > p {
+    max-width: 500px;
+    margin: 0 auto 50px auto;
+  }
+}
+.logo-link{
+	height: 100px;
 }
 .contact-section {
-	background-color: $primary-background-colour;
-	padding: 15vh 20px;
-	height: 40vh;
-	text-align: center;
+  background-color: $primary-background-colour;
+  padding: 15vh 20px;
+  height: 40vh;
+  text-align: center;
 }
 @media (max-width: 500px) {
-	.nav-right {
-		opacity: 0;
-		pointer-events: none;
-	}
+  .nav-right {
+    opacity: 0;
+    pointer-events: none;
+  }
 }

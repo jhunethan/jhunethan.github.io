@@ -40,7 +40,7 @@ body {
   width: 100vw;
   margin: 0;
   font-size: 1.25rem;
-  background-color: #435B70;
+  background-color: #435b70;
 }
 
 .header-nav {
@@ -99,7 +99,7 @@ body {
   height: fit-content;
   max-width: 400px;
   animation: fade-slide-in-from-top 1s;
-  border-bottom: #435B70 5px solid;
+  border-bottom: #435b70 5px solid;
 }
 
 .top-fullname {
@@ -116,7 +116,7 @@ body {
 
 .skills-list-child {
   padding: 5px 10px;
-  background-color: #435B70;
+  background-color: #435b70;
   border: white 1px solid;
   color: white;
   font-weight: bold;
@@ -125,13 +125,6 @@ body {
 .skills-list-child:hover {
   background-color: #fcfcfc;
   color: black;
-}
-
-.section {
-  width: 100vw;
-  padding: 20px;
-  max-width: 1300px;
-  margin: 0 auto;
 }
 
 .projects-section {
@@ -150,12 +143,14 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  width: auto;
+  max-width: 1200px;
   gap: 10px;
-  margin: 50px;
+  margin: 50px auto;
 }
 
 .project-title {
-  background-color: #435B70;
+  background-color: #435b70;
   color: white;
   padding: 10px 0;
 }
@@ -209,7 +204,8 @@ footer {
   background-color: #0f0f0f;
   height: 100px;
 }
-footer p, footer a {
+footer p,
+footer a {
   color: #fff;
 }
 
@@ -226,6 +222,10 @@ footer p, footer a {
 .about-section > p {
   max-width: 500px;
   margin: 0 auto 50px auto;
+}
+
+.logo-link {
+  height: 100px;
 }
 
 .contact-section {
